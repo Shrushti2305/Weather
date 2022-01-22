@@ -22,18 +22,17 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     const{ feels_like } = data.main;
-    document.querySelector(".city").innerText = "Current Temperature in " + name;
+    document.querySelector(".city").innerText =  name;
     
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C";
-    document.querySelector(".humidity").innerText =
-      "Humidity: " + humidity + "%";
-    document.querySelector(".feels_like").innerText ="Feels like:" + feels_like + "°C";
+    document.querySelector(".temp").innerText ="Temperature: " + temp + "°C";
+    document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+    document.querySelector(".feels_like").innerText ="Feels like: " + feels_like + "°C";
     document.querySelector(".wind").innerText =
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+      "url('https://source.unsplash.com/1600x900/?" + description + "')";
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
