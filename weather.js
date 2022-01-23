@@ -25,7 +25,7 @@ let weather = {
     document.querySelector(".city").innerText =  name;
     
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText ="Temperature: " + temp + "°C";
+    document.querySelector(".temp").innerText =  temp + "°C";
     document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
     document.querySelector(".feels_like").innerText ="Feels like: " + feels_like + "°C";
     document.querySelector(".wind").innerText =
