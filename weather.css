@@ -1,0 +1,130 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  /* background-color: paleturquoise; */
+  font-size: 120%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #000000d0;
+  /* background: lightblue; */
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  
+  max-width: 420px;
+  margin: 1em;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 5em; */
+  height: 80vh;
+  
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  /* background: #7c7c7c2b; */
+  background: whitesmoke;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  /* background: #7c7c7c2b; */
+  background: whitesmoke;
+  color: black;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+svg{
+  width: 2em;
+  height: 2em;
+}
+.svgF {
+  
+  padding: 10px;
+  background-color: #ff9aa2;
+  border: 1px solid white;
+  margin-bottom:1vh ;
+  margin-top: 1vh;
+  color: white;
+ 
+}
+
+.svgHum{
+ 
+ padding:10px;
+  background-color: #b5ead7;
+  border: 1px solid white;
+  margin-bottom: 1vh;
+  color: white;
+
+}
+.svgwind{
+ 
+  padding:10px;
+  background-color: #85e3ff;
+  border: 1px solid white;
+  color: white;
+  
+
+}
