@@ -1,1 +1,1 @@
-https://shrushti2305.github.io/Weather- Application/
+https://shrushti2305.github.io/Weather-Application/
